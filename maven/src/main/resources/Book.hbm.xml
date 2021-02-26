@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="Book_package.Book" table="BOOKS">
+        <meta attribute="class-description">This class
+            contains developer's details.
+        </meta>
+        <id name="isbn" type="string" column="ISBN">
+        </id>
+        <property name="author" column="Author" type="string"/>
+        <property name="bookName" column="Name" type="string"/>
+        <property name="publisher" column="Publisher" type="string"/>
+        <property name="year" column="PublishYear" type="string"/>
+    </class>
+
+</hibernate-mapping>
